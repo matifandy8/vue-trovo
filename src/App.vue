@@ -1,46 +1,41 @@
+<script>
+import "./sass/main.scss";
+
+import Sidebar from '@/components/sidebar/Sidebar'
+import Nav from '@/components/Nav'
+import Home from '@/views/Home'
+import { sidebarWidth } from '@/components/sidebar/state'
+export default {
+  components: { Sidebar,Nav,Home },
+  setup() {
+    return { sidebarWidth }
+  }
+}
+</script>
 <template>
-<Nav/>
- <Sidebar />
+<div class="container">
+<Nav />
+  <Sidebar />
   <div :style="{ 'margin-left': sidebarWidth }">
     <router-view />
   </div>
-    <font-awesome-icon icon="user-secret" />
-
+  <Home/>
+  </div>
 </template>
 
-<script>
-import Nav from "./components/Nav"
-import Sidebar from './components/sidebar/Sidebar.vue';
-import { sidebarWidth } from '@/components/sidebar/state'
-
-
-
-export default {
-  name: 'App',
-  components: {
-    Nav,
-    Sidebar
-  },
-    setup() {
-    return { sidebarWidth }
-  }
-};
-</script>
-
-<style scoped lang="scss">
-@import "@/assets/variables.scss";
-@import "@/assets/styles.scss";
-
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+<style>
+#nav {
+  padding: 30px;
+}
+#nav a {
+  font-weight: bold;
   color: #2c3e50;
- 
 }
-body{
-  margin: 0px 15px;
+#nav a.router-link-exact-active {
+  color: #42b983;
 }
-
+.container{
+  width:100%;
+  height:100%;
+}
 </style>

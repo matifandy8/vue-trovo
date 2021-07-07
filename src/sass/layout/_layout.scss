@@ -1,0 +1,11 @@
+// GENERAL LAYOUT
+.main {
+  padding: 5rem $padding-side-desktop 8rem;
+  overflow: hidden;
+  position: relative;
+
+  @include respond(mobile) {
+    padding: 4rem $padding-side-mobile 6rem;
+  }
+}
+
