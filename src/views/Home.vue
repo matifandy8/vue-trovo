@@ -1,16 +1,18 @@
 <template>
-  <div class="home">
-    <SlidesGames />
-  </div>
+    <Slidesgames />
+    <Streams/>
 </template>
 
 <script>
-import { SlidesGames } from '@/components/SlidesGames'
+import Slidesgames from '@/components/Slidesgames'
+import Streams from '@/components/Streams'
+
 
 export default {
   name: 'Home',
   components: {
-    SlidesGames
+    Slidesgames,
+    Streams
   }
 }
 </script>

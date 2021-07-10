@@ -18,10 +18,11 @@ export default {
   top:0;
   right:0;
     background-color: #171717;
-    width: 91%;
+    width: 100%;
     height: 60px;
-    position: fixed;
     z-index: 50;
+      border-bottom:1px solid rgb(71, 71, 71);
+
     img {
         height: 100%;
     }

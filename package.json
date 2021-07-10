@@ -15,7 +15,8 @@
     "@fortawesome/vue-fontawesome": "^3.0.0-4",
     "core-js": "^3.6.5",
     "vue": "^3.0.0",
-    "vue-router": "^4.0.10"
+    "vue-router": "^4.0.10",
+    "vue-split-carousel": "^2.1.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",

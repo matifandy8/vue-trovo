@@ -1,9 +1,11 @@
 <script>
 import SidebarLink from './SidebarLink'
+import Topstreamers from '@/components/Topstreamers'
+
 import { collapsed, toggleSidebar, sidebarWidth } from './state'
 export default {
   props: {},
-  components: { SidebarLink },
+  components: { SidebarLink ,Topstreamers},
   setup() {
     return { collapsed, toggleSidebar, sidebarWidth }
   }
@@ -23,14 +25,14 @@ export default {
     <div class="hamburger__item hamburger__item--last"></div>
     </div>
     </span>
-
+<div class="links">
     <SidebarLink to="/" icon="fas fa-home">Home</SidebarLink>
     <SidebarLink to="/games" icon="fas fa-columns">Games</SidebarLink>
     <SidebarLink to="/following" icon="fas fa-chart-bar">Following</SidebarLink>
     <SidebarLink to="/history" icon="fas fa-users">History</SidebarLink>
     <SidebarLink to="/events" icon="fas fa-image">Events</SidebarLink>
-
-   
+</div>
+   <Topstreamers />
   </div>
 </template>
 
@@ -52,6 +54,11 @@ export default {
   flex-direction: column;
   border-right:1px solid rgb(71, 71, 71);
 }
+.links{
+    border-bottom:1px solid #474747;
+
+}
+
 
 .collapse-icon {
   // position: absolute;

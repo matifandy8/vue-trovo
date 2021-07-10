@@ -3,24 +3,22 @@ import "./sass/main.scss";
 
 import Sidebar from '@/components/sidebar/Sidebar'
 import Nav from '@/components/Nav'
-import Home from '@/views/Home'
 import { sidebarWidth } from '@/components/sidebar/state'
 export default {
-  components: { Sidebar,Nav,Home },
+  components: { Sidebar,Nav },
   setup() {
     return { sidebarWidth }
   }
 }
 </script>
 <template>
-<div class="container">
+<!-- <div class="container"> -->
 <Nav />
   <Sidebar />
   <div :style="{ 'margin-left': sidebarWidth }">
     <router-view />
   </div>
-  <Home/>
-  </div>
+  <!-- </div> -->
 </template>
 
 <style>
