@@ -20,14 +20,14 @@ export default {
   name: "App",
   data() {
     return {
-      itemAmount: 6,
+      itemAmount:  ["Feature", "Call of Duty:Mobile","Dota 2", "Grand Theft Auto V","League of Legends","Free Fire","Fornite","Valorant","PUBG MOBILE"],
       option: {
-        displayAmount: 4,
+        displayAmount: 5,
         autoplay: false,
         speed: 500,
         interval: 3000,
         loop: true,
-        height: 80,
+        height: 70,
         itemWidth: 154,
         pauseOnHover: true,
         timingFunction: "ease",
@@ -69,18 +69,19 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@use '@/sass/abstracts/_variables.scss' as v;
 .wrapper {
   width: 900px;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 .box {
-  border: 1px solid #eee;
-  height: 100%;
+    height: 100%;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;
   color: rgba(255, 255, 255, 0.6);
+  background-color: v.$color-brand-regular;
 
 }
 .operator {
