@@ -1,10 +1,10 @@
 <template>
   <div class="container">
-    <div class="video1">1</div>
-    <div class="video2">2</div>
-    <div class="video3">3</div>
-    <div class="video4">4</div>
-    <div class="video5">5</div>
+    <div class="video1"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/nhBVL41-_Cw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+    <div class="video2"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/nFh7-HfODYY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div class="video3"><iframe width="100%" height="100%"  src="https://www.youtube.com/embed/nhBVL41-_Cw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+    <div class="video4"><iframe width="100%" height="100%"  src="https://www.youtube.com/embed/nhBVL41-_Cw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+    <div class="video5"><iframe width="100%" height="100%"  src="https://www.youtube.com/embed/nhBVL41-_Cw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
   </div>
 </template>
 
