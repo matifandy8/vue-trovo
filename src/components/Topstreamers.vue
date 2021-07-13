@@ -1,10 +1,10 @@
 <template>
   <div class="streamers">
-    <div class="streamers__item">1</div>
-    <div class="streamers__item">2</div>
-    <div class="streamers__item">3</div>
-    <div class="streamers__item">4</div>
-    <div class="streamers__item">5</div>
+    <div class="streamers__item"></div>
+    <div class="streamers__item"></div>
+    <div class="streamers__item"></div>
+    <div class="streamers__item"></div>
+    <div class="streamers__item"></div>
   </div>
 </template>
 
@@ -19,6 +19,7 @@
     margin-left: 15px;
     background-color: white;
     background-size: cover;
+    background-image:url("https://thispersondoesnotexist.com/image");
     border-radius: 32px;
     margin:10px;
     
