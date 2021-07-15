@@ -1,4 +1,4 @@
-# proyect
+# Trovo
 
 ## Project setup
 ```
